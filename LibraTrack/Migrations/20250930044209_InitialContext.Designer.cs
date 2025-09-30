@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraTrack.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    [Migration("20250930010632_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250930044209_InitialContext")]
+    partial class InitialContext
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -136,9 +136,10 @@ namespace LibraTrack.Migrations
                     b.Property<DateTime?>("PaidDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Status")
+                    b.Property<string>("Status")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -161,9 +162,10 @@ namespace LibraTrack.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETDATE()");
 
-                    b.Property<int>("Status")
+                    b.Property<string>("Status")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -203,9 +205,10 @@ namespace LibraTrack.Migrations
                         .HasMaxLength(13)
                         .HasColumnType("nvarchar(13)");
 
-                    b.Property<int>("Status")
+                    b.Property<string>("Status")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 

@@ -133,9 +133,10 @@ namespace LibraTrack.Migrations
                     b.Property<DateTime?>("PaidDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Status")
+                    b.Property<string>("Status")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -158,9 +159,10 @@ namespace LibraTrack.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETDATE()");
 
-                    b.Property<int>("Status")
+                    b.Property<string>("Status")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -200,9 +202,10 @@ namespace LibraTrack.Migrations
                         .HasMaxLength(13)
                         .HasColumnType("nvarchar(13)");
 
-                    b.Property<int>("Status")
+                    b.Property<string>("Status")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 

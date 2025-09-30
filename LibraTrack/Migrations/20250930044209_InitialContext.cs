@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace LibraTrack.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialContext : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -47,7 +47,7 @@ namespace LibraTrack.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LoanDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
-                    Status = table.Column<int>(type: "int", maxLength: 50, nullable: false)
+                    Status = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -65,7 +65,7 @@ namespace LibraTrack.Migrations
                     PhoneNumber = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     MembershipDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
-                    Status = table.Column<int>(type: "int", maxLength: 50, nullable: false)
+                    Status = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -113,7 +113,7 @@ namespace LibraTrack.Migrations
                     Amount = table.Column<decimal>(type: "decimal(6,2)", nullable: false),
                     IssuedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     PaidDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Status = table.Column<int>(type: "int", maxLength: 50, nullable: false)
+                    Status = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {

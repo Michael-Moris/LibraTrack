@@ -13,7 +13,8 @@ namespace LibraTrack.Configurations
 
             builder.Property(l => l.Status)
                    .IsRequired()
-                   .HasMaxLength(50);
+                   .HasMaxLength(50)
+                   .HasConversion<string>();
         }
     }
 }

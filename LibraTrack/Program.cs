@@ -1,4 +1,5 @@
 ﻿using LibraTrack.AppDbContext;
+using LibraTrack.Helper;
 
 namespace LibraTrack
 {
@@ -59,6 +60,25 @@ namespace LibraTrack
             //        Console.WriteLine("\tNo Books Found.");
             //}
             #endregion
+
+            #region Try 03: Member with id 1 Want To Borrow The Book With Id 2 And He Will Return it After 5 Days.
+            //int MemberId = 1;
+            //int BookId = 2;
+            //int BorrowDays = 5;
+
+            //bool Results = LoanManagement.BorrowBook(MemberId, BookId, BorrowDays, dbContext);
+            //if (Results)
+            //    Console.WriteLine($"Member With Id {MemberId} Borrowed The Book With Id {BookId} For {BorrowDays} Days Successfully!...");
+            //else
+            //    Console.WriteLine("Book Borrowing Failed! Check The Member Status Or Book Availability...");
+            #endregion
+
+
+
+
+
+
+
 
             #endregion
 

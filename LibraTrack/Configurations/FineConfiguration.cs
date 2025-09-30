@@ -16,7 +16,8 @@ namespace LibraTrack.Configurations
 
             builder.Property(f => f.Status)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(50)
+                .HasConversion<string>();
 
             builder.HasOne(f => f.Loan)
                 .WithOne(l => l.Fine)
