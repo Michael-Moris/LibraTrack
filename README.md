@@ -44,7 +44,6 @@ LibraTrack/
 ### 1. Clone the Repo
 ```bash
 git clone https://github.com/Michael-Moris/LibraTrack.git
-cd LibraTrack
 ```
 ### 2️⃣ Build the Project
 ```bash
