@@ -41,18 +41,30 @@ LibraTrack/
 
 ## ⚡ Getting Started
 
-### 1. Clone the Repo
+### 1️⃣ Clone the Repo
 ```bash
 git clone https://github.com/Michael-Moris/LibraTrack.git
+cd LibraTrack
 ```
-### 2️⃣ Build the Project
+
+### 2️⃣ Open the Project
+Open the solution in Visual Studio or VS Code.
+
+Make sure you have .NET 9 SDK and SQL Server installed.
+
+### 3️⃣ Apply Database Migrations
 ```bash
-dotnet build
+# Using .NET CLI
+dotnet ef database update
+
+# Or inside Visual Studio Package Manager Console
+Update-Database
 ```
-### 3️⃣ Run the Application
-```bash
-dotnet run
-```
+
+### 4️⃣ Seed & Test the Project
+>... The project includes JSON seeding for Authors, Books, Categories, and Members.
+
+>... To test features (borrowing, returning, fines, etc.), uncomment or add code in Program.cs and run.
 
 ---
 
