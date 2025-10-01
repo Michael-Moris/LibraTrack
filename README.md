@@ -1,6 +1,6 @@
 # 📚 LibraTrack
 
-A **Library Management System** built with **ASP.NET Core 9** and **Entity Framework Core**.  
+A **Library Management System** built with **.NET 9** and **Entity Framework Core**.  
 It helps libraries manage **books, authors, categories, members, loans, and fines** efficiently.
 
 ---
