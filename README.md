@@ -48,9 +48,9 @@ cd LibraTrack
 ```
 
 ### 2️⃣ Open the Project
-Open the solution in Visual Studio or VS Code.
+>... Open the solution in Visual Studio or VS Code.
 
-Make sure you have .NET 9 SDK and SQL Server installed.
+>... Make sure you have .NET 9 SDK and SQL Server installed.
 
 ### 3️⃣ Apply Database Migrations
 ```bash
@@ -62,9 +62,9 @@ Update-Database
 ```
 
 ### 4️⃣ Seed & Test the Project
->... The project includes JSON seeding for Authors, Books, Categories, and Members.
+- The project includes JSON seeding for Authors, Books, Categories, and Members.
 
->... To test features (borrowing, returning, fines, etc.), uncomment or add code in Program.cs and run.
+- To test features (borrowing, returning, fines, etc.), uncomment or add code in Program.cs and run.
 
 ---
 
